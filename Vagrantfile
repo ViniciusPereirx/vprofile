@@ -54,7 +54,7 @@ Vagrant.configure("2") do |config|
     web01.vm.hostname = "web01"
   web01.vm.network "public_network", ip: "192.168.3.11"
   web01.vm.provider "virtualbox" do |vb|
-     vb.gui = true
+     vb.gui = false
      vb.memory = "800"
    end
 end
